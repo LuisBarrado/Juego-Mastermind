@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastermind</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="master.js" defer></script>
+</head>
+
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="video.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <div class="principal">
+            <h1>MASTERMIND</h1>
+            <h2>INSTRUCCIONES</h2>
+            <p>Intenta adivinar la combinación de colores correcta
+                <br>usando los colores disponibles
+            </p>
+            <h2>Colores Disponibles</h2>
+            <ul>
+                <li>Rojo</li>
+                <li>Amarillo</li>
+                <li>Verde</li>
+                <li>Azul</li>
+            </ul>
+            <button id="botonJugar">Nueva partida</button>
+            <br>
+            <div class="EntradaUsuario">
+            <input type="text" id="AdivinaColores" placeholder="Escribe tus Colores" style="display:none;width: 300px;">&nbsp;
+            <button id="botonIntento" style="display:none">Comprobar</button>
+            </div>
+            <div class="fondo"></div>
+        </div>
+    </div>    
+</body>
+</html>
